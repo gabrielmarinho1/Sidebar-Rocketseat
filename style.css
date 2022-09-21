@@ -1,0 +1,133 @@
+/* font-family: Poppins 
+font-weight: 400 e 500
+Você pode encontrar a fonte no [Google Fonts](https://fonts.google.com/) */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sidebar {
+    width: 6vw;
+    height: 100vh;
+    background-color: var(--green);
+    position: relative;
+    transition: .2s;
+}
+
+.dashboard {
+    height: 100vh;
+    width: auto;
+}
+
+.dashboard>h3{
+    margin: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: .5s;
+}
+
+header>img {
+    margin: 20px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav>a>button {
+    height: 7vh;
+    width: inherit;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: inherit;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+nav>a>button>img {
+    margin: auto 10px;
+}
+
+nav>a>button:hover{
+    background-color: var(--light-green);
+    transition: .2s;
+}
+
+nav>a>button:focus{
+    background-color: var(--light-grey);
+    transition: .2s;
+}
+
+.user{
+    font-weight: 400;
+    background-color: var(--light-green);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: inherit;
+}
+
+#name{
+    font-size: 15px;
+}
+
+#profession{
+    font-size: 12px;
+}
+
+#avatar{
+    height: 40px;
+    width: 40px;
+    border-radius: 15px;
+}
+
+#log-out{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.closed{
+    display: none;
+}
+
+.opened{
+    display: block;
+}
